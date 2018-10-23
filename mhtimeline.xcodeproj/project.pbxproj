@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522354E8B356B3644DC53E05 /* Pods_mhtimeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CDAD3D9C0842ECB058EAFB /* Pods_mhtimeline.framework */; };
 		86473F8A217F994A009DD655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86473F89217F994A009DD655 /* AppDelegate.swift */; };
 		86473F8C217F994A009DD655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86473F8B217F994A009DD655 /* ViewController.swift */; };
 		86473F8F217F994A009DD655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86473F8D217F994A009DD655 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50CDAD3D9C0842ECB058EAFB /* Pods_mhtimeline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mhtimeline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86473F86217F994A009DD655 /* mhtimeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mhtimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86473F89217F994A009DD655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86473F8B217F994A009DD655 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		86473F90217F994A009DD655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86473F93217F994A009DD655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86473F95217F994A009DD655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F8064276824C5C04D1A10F4 /* Pods-mhtimeline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mhtimeline.release.xcconfig"; path = "Pods/Target Support Files/Pods-mhtimeline/Pods-mhtimeline.release.xcconfig"; sourceTree = "<group>"; };
+		ED58884E687B07C991080767 /* Pods-mhtimeline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mhtimeline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mhtimeline/Pods-mhtimeline.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522354E8B356B3644DC53E05 /* Pods_mhtimeline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06B4156FFE0C552642BA4704 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED58884E687B07C991080767 /* Pods-mhtimeline.debug.xcconfig */,
+				9F8064276824C5C04D1A10F4 /* Pods-mhtimeline.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		86473F7D217F994A009DD655 = {
 			isa = PBXGroup;
 			children = (
 				86473F88217F994A009DD655 /* mhtimeline */,
 				86473F87217F994A009DD655 /* Products */,
+				06B4156FFE0C552642BA4704 /* Pods */,
+				CA29DED83CFB67D5D56C6921 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = mhtimeline;
 			sourceTree = "<group>";
 		};
+		CA29DED83CFB67D5D56C6921 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50CDAD3D9C0842ECB058EAFB /* Pods_mhtimeline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86473F98217F994A009DD655 /* Build configuration list for PBXNativeTarget "mhtimeline" */;
 			buildPhases = (
+				EA4352DE5DF330374E33913B /* [CP] Check Pods Manifest.lock */,
 				86473F82217F994A009DD655 /* Sources */,
 				86473F83217F994A009DD655 /* Frameworks */,
 				86473F84217F994A009DD655 /* Resources */,
+				F7DB3C4031010A4A8D475849 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA4352DE5DF330374E33913B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mhtimeline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7DB3C4031010A4A8D475849 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mhtimeline/Pods-mhtimeline-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ISTimeline/ISTimeline.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISTimeline.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mhtimeline/Pods-mhtimeline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86473F82217F994A009DD655 /* Sources */ = {
@@ -258,6 +331,7 @@
 		};
 		86473F99217F994A009DD655 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED58884E687B07C991080767 /* Pods-mhtimeline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mhtimeline/Info.plist;
@@ -270,6 +344,7 @@
 		};
 		86473F9A217F994A009DD655 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F8064276824C5C04D1A10F4 /* Pods-mhtimeline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mhtimeline/Info.plist;
